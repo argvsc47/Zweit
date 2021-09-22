@@ -32,6 +32,7 @@ util.cpp
 tools.cpp
 main.cpp
 ```
+in terminal
 ```
 zweit.py build.zw
 ```
