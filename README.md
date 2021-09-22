@@ -32,3 +32,6 @@ util.cpp
 tools.cpp
 main.cpp
 ```
+```
+zweit.py build.zw
+```
