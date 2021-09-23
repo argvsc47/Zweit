@@ -10,12 +10,10 @@ A build system for stuff with lots of files with the same compiler flags
 # File Format
 
 ```
-// first line is for the compiler name
-// second line is for the compiler flags (or leave blank if none)
-// leave the third line empty
-// fourth line is the source dir (where your files are)
-// leave the fifth line empty
-// from the sixth line and forward are the files names
+// first line is for the compiler name (MANDATORY
+// second line is for the compiler flags (or type !NONE if there isn't any)
+// third line is the source dir (where your files are, or put !NONE if there isn't any)
+// from the fourth line and onwards are the files names
 
 ```
 
@@ -24,12 +22,12 @@ A build system for stuff with lots of files with the same compiler flags
 build.zw
 ```
 gcc
--lstc++
-
+!NONE
 src/
 
 util.cpp
 tools.cpp
+
 main.cpp
 ```
 in terminal
