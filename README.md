@@ -33,7 +33,7 @@ tools.cpp
 main.cpp
 ```
 in the terminal
-```
+```shell
 zweit.py build.zw
 ```
 
@@ -57,9 +57,10 @@ test_2.cpp
 test_3.cpp
 ```
 in the terminal now, you can either run :
-```
+```shell
 zweit.py build.zw
 ```
 or :
+```shell
+zweit.py build.zw -tests
 ```
-zweit.py build.zw -tests```
