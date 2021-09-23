@@ -9,13 +9,12 @@ A build system for stuff with lots of files with the same compiler flags
 
 # File Format
 
-```
-// first line is for the compiler name (MANDATORY
-// second line is for the compiler flags (or type !NONE if there isn't any)
-// third line is the source dir (where your files are, or put !NONE if there isn't any)
-// from the fourth line and onwards are the files names
+ * The first line specifies the compiler (or interpreter) this is **mandatory**
+ * the next non-empty line should specify the compiler flags, `-lstdc++` for example
+ * the next following non-empty line should specify the source directory
+ * and from there onwards all non-empty lines are the files to include
 
-```
+Note that everything apart from the compiler and files can be omitted with `!NONE`
 
 # Examples
 
@@ -30,7 +29,7 @@ tools.cpp
 
 main.cpp
 ```
-in terminal
+in the terminal
 ```
 zweit.py build.zw
 ```
