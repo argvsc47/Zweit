@@ -49,7 +49,7 @@ main.cpp
 
 # -tests
 gcc
-!NONE
+-lstc++
 tests/
 
 test_1.cpp
