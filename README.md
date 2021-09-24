@@ -17,7 +17,7 @@ A build system for stuff with lots of files with the same compiler flags
  * to make a new command, you need to make a new line that starts with '#' and a space, and then the corresponding flag
  * from there you can specify the arguments for that command
 
-Note that everything apart from the compiler and files can be omitted with `!NONE`
+Note that everything apart from the compiler and files can be omitted with `!NONE`\n
 Tip : if you want to pass '!' for flags per example, preceed it with a flag so `!X` becomes ` !X`
 
 # Examples
