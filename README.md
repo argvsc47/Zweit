@@ -18,6 +18,7 @@ A build system for stuff with lots of files with the same compiler flags
  * from there you can specify the arguments for that command
 
 Note that everything apart from the compiler and files can be omitted with `!NONE`
+Tip : if you want to pass '!' for flags per example, preceed it with a flag so `!X` becomes ` !X`
 
 # Examples
 
