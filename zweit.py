@@ -77,9 +77,10 @@ batch = []
 
 for _, ln in enumerate(lns):
 	if ln.startswith("#"):
-		data.append(
-			[name, batch]
-		)
+		if batch:
+			data.append(
+				[name, batch]
+			)
 		name = ln[2:]
 		offset = _+1
 		batch = []
@@ -87,7 +88,7 @@ for _, ln in enumerate(lns):
 
 	batch.append(ln)
 
-if batch:
+if batch: #cleanup
 	data.append([name, batch])
 
 cmds = {}
@@ -95,6 +96,12 @@ for batch in data:
 	cmds.update({batch[0]:make_command(batch[1])})
 
 if len(argv) == 2:
-	build(cmds["default"])
+	if "default" in cmds:
+		build(cmds["default"])
+	else:
+		exit("No default option set.")
 else:
-	build(cmds[argv[2]])
+	if argv[2] in cmds:
+		build(cmds[argv[2]])
+	else:
+		exit(f"No {argv[2]} option set.")
