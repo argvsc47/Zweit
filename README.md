@@ -5,7 +5,7 @@ A build system for stuff with lots of files with the same compiler flags
 
  - clone this repo and put `zweit.py` in your project root (or wherever you want, but be sure to update your PATH !)
  - write a zwscript file
- - and run zweit.py `your_zwscript_filename`
+ - and run `zweit.py [your_zwscript_filename]`
 
 # File Format
 
